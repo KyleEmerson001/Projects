@@ -1,0 +1,320 @@
+
+.body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    background: radial-gradient(black, white);
+    height:auto;
+    
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(black, white);
+}
+.title {
+    margin-left: 40%;
+    color: greenyellow;
+    background-color: blue;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+}
+.border{
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: colors;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 0;
+    position: relative;
+    left: 260px;
+}
+.shape {
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: black;
+
+    position: relative;
+    right: 260px;
+    top: 20px;
+}
+.twelve {
+    color:blue;
+    font-size: 3em;
+    position: relative;
+    bottom: 30px;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.one {
+    position: relative;
+    left: 100px;
+    bottom: 90px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+.two {
+    position: relative;
+    left: 180px;
+    bottom: 110px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+}
+.three {
+    position: relative;
+    left: 220px;
+    bottom: 80px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 15s;
+}
+.four {
+    position: relative;
+    left: 180px;
+    bottom: 50px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 20s;
+}
+.five {
+    position: relative;
+    left: 100px;
+    bottom: 60px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 25s;
+}
+.six {
+    position: relative;
+    bottom: 110px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 30s;
+}
+.seven {
+    position: relative;
+    right: 100px;
+    bottom: 233px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 35s;
+}
+.eight {
+    position: relative;
+    right: 180px;
+    bottom: 398px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 40s;
+}
+.nine {
+    position: relative;
+    right: 220px;
+    bottom: 610px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 45s;
+}
+.ten {
+    position: relative;
+    right: 180px;
+    bottom: 807px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 50s;
+}
+.eleven {
+    position: relative;
+    right: 100px;
+    bottom: 960px;
+    color:blue;
+    font-size: 3em;
+    animation-name: colorful;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 55s;
+}
+.secHand{
+    width: 10px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    left: 245px;
+    bottom: 1035px;
+    animation-name: spin;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom center;
+}
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+.minHand{
+    width: 20px;
+    height: 170px;
+    background-color: blue;
+    position: relative;
+    left: 245px;
+    bottom: 1200px;
+    animation-name: spin;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom center;
+}
+.hourHand{
+    width: 30px;
+    height: 125px;
+    background-color: blue;
+    position: relative;
+    left: 245px;
+    bottom: 1320px;
+    animation-name: spin;
+    animation-duration: 21600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom center;
+}
+.middle{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 240px;
+    bottom: 1345px;
+}
+
+@keyframes colorful {
+    0% {
+      color: red;
+    }
+    9%{
+        color: orange; 
+    }
+    18%{
+        color: yellow; 
+    }
+    27%{
+        color: green; 
+    }
+    36%{
+        color: blue; 
+    }
+    45%{
+        color: indigo; 
+    }
+    54%{
+        color: VIOLET; 
+    }
+    63%{
+        color: pink; 
+    }
+    72%{
+        color: crimson; 
+    }
+    81%{
+        color: grey; 
+    }
+    90%{
+        color: black; 
+    }
+    100% {
+      color: white;
+    }
+}
+@keyframes colors {
+    0% {
+      background-color: red;
+    }
+    9%{
+        background-color: orange; 
+    }
+    18%{
+        background-color: yellow; 
+    }
+    27%{
+        background-color: green; 
+    }
+    36%{
+        background-color: blue; 
+    }
+    45%{
+        background-color: indigo; 
+    }
+    54%{
+        background-color: VIOLET; 
+    }
+    63%{
+        background-color: pink; 
+    }
+    72%{
+        background-color: crimson; 
+    }
+    81%{
+        background-color: grey; 
+    }
+    90%{
+        background-color: black; 
+    }
+    100% {
+      background-color: white;
+    }
+}
+
