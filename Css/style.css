@@ -1,24 +1,26 @@
-
-.body{
+html, body{
     display: flex;
     justify-content: center;
     background-color: black;
     background: radial-gradient(black, white);
-    height:auto;
-    
+    height: 100%;
+    width: 100%;
+    margin:0;
 }
 .clock{
     display: flex;
     justify-content: center;
-    background: radial-gradient(black, white);
+    margin-top: 100px;
 }
 .title {
-    margin-left: 40%;
-    color: greenyellow;
-    background-color: blue;
+    margin:auto;
+    color: blue;
+    animation-name: rainbow;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     justify-content: center;
     text-align: center;
-    width: 500px;
     height: 50px;
 }
 .border{
@@ -41,9 +43,6 @@
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    border-width: 10px;
-    border-color: black;
-
     position: relative;
     right: 260px;
     top: 20px;
@@ -318,3 +317,25 @@
     }
 }
 
+@keyframes rainbow {
+    0% {
+        color: red;
+      }
+      16%{
+          color: orange; 
+      }
+      33%{
+          color: yellow; 
+      }
+      50%{
+          color: green; 
+      }
+      67%{
+          color: blue; 
+      }
+      84%{
+          color: indigo; 
+      }
+      100%{
+          color: VIOLET; 
+}
